@@ -1,0 +1,223 @@
+/* General settings */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --edf-orange: #FF6600;
+  --edf-blue-dark: #003366;
+  --header-orange: #F57C00;
+  --text-primary: #333;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-primary);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+/* Custom EDF Logo in Title Slide */
+.edf-logo-text {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--edf-blue-dark);
+  text-align: left;
+  margin-bottom: 20px;
+}
+.edf-logo-text::before {
+    content: "●●●";
+    color: var(--edf-orange);
+    letter-spacing: -2px;
+    margin-right: 10px;
+}
+
+/* Footer & Logo */
+.reveal .footer {
+  color: #555;
+  font-size: 0.5em !important;
+}
+.reveal .slide-logo {
+  height: 40px !important;
+  max-height: 40px !important;
+  filter: grayscale(1) brightness(0.7);
+}
+
+
+/* --- Slide 1: Title Slide --- */
+.title-slide {
+  text-align: center;
+}
+
+.title-slide .overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px 60px;
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.title-slide h1 {
+  font-size: 2.2em;
+  color: var(--edf-blue-dark);
+  margin: 0.2em 0;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: none;
+}
+.title-slide .subtitle {
+  font-size: 0.7em;
+  color: #555;
+  margin-bottom: 2em;
+}
+.title-slide .livret {
+  font-size: 1.5em;
+  color: var(--edf-orange);
+  font-weight: 600;
+  border-top: 1px solid #ddd;
+  padding-top: 1em;
+}
+
+
+/* --- Slides with Header Bar --- */
+.slide-with-header h2 {
+    background-color: var(--header-orange);
+    color: white;
+    padding: 15px 40px;
+    margin: -20px -40px 30px -40px; /* Adjust for revealjs padding */
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+/* --- Slide 2: Sommaire --- */
+.sommaire-list ul {
+  list-style-type: none;
+  padding: 0;
+  width: 65%;
+}
+.sommaire-list li {
+  color: white;
+  padding: 12px 24px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.sommaire-list li:nth-child(1) { background-color: #2979FF; }
+.sommaire-list li:nth-child(2) { background-color: #002D62; }
+.sommaire-list li:nth-child(3) { background-color: #558B2F; }
+.sommaire-list li:nth-child(4) { background-color: #AFB42B; }
+.sommaire-list li:nth-child(5) { background-color: #F57C00; }
+.sommaire-list li:nth-child(6) { background-color: #E64A19; }
+
+
+/* --- Slide 3: Préambule --- */
+.slide-with-header ul {
+  list-style: none;
+  padding-left: 1.5em;
+  font-size: 0.8em;
+  line-height: 1.6;
+}
+.slide-with-header li {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+.slide-with-header li::before {
+  content: '◆';
+  position: absolute;
+  left: -1.5em;
+  top: 0.1em;
+  color: var(--edf-orange);
+  font-size: 1.2em;
+}
+
+.info-box {
+  background-color: #2C3E50;
+  color: white;
+  padding: 20px;
+  font-size: 0.7em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.info-box .icon {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3em;
+  float: left;
+  margin-right: 0.3em;
+  line-height: 1;
+  margin-top: -0.1em;
+}
+
+/* --- Slide 4: Acteurs --- */
+.diagram-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    font-size: 14px;
+}
+.actor {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1em;
+    line-height: 1.3;
+}
+.actor strong { font-size: 1.3em; margin-bottom: 0.5em; }
+.actor-circle { border: 4px solid; border-radius: 50%; }
+.producteur {
+    width: 24%; height: 42%; top: 29%; left: 38%;
+    background-image: url('https://i.imgur.com/k0PqR94.jpeg');
+    background-size: cover; background-position: center;
+    border-radius: 50%; color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.producteur strong { font-size: 2.2em; }
+.cre { top: 0; left: 5%; width: 25%; height: 40%; border-color: #8E44AD; }
+.marche { top: 0; right: 5%; width: 25%; height: 40%; border-color: #BDC3C7; }
+.prefet { bottom: 0; left: 5%; width: 25%; height: 40%; border-color: #F39C12; }
+.gestionnaire { bottom: 0; left: 32%; width: 28%; height: 45%; border-color: #2980B9; }
+.edfoa { bottom: 0; right: 5%; width: 25%; height: 40%; border-color: #E67E22; }
+
+
+/* --- Slide 5: Parcours --- */
+.parcours-wrapper { font-size: 0.7em; }
+.parcours-row {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 5px;
+}
+.step-box {
+    flex: 4;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    font-weight: 600;
+}
+.step-number {
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 0.5em;
+    line-height: 1;
+}
+.detail-box {
+    flex: 6;
+    background-color: #f5f5f5;
+    padding: 12px 15px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+.step-1 { background-color: #1976D2; }
+.step-2 { background-color: #303F9F; }
+.step-3 { background-color: #FBC02D; color: #333; }
+.step-4 { background-color: #F57C00; }
+.step-5 { background-color: #D32F2F; }
+.step-6 { background-color: #388E3C; }
+.step-7 { background-color: #AFB42B; color: #333; }

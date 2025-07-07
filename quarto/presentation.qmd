@@ -1,0 +1,121 @@
+---
+title: "Appel d'offres éolien terrestre"
+subtitle: "(publié par la Commission de Régulation de l'Energie le 28 Avril 2017)"
+author: "EDF"
+format:
+  revealjs:
+    theme: simple
+    css: styles.css
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/EDF_logo.svg/2560px-EDF_logo.svg.png"
+    footer: "Direction des Services Partagés"
+    slide-number: true
+    width: 1280
+    height: 720
+---
+
+## {data-background-image="https://i.imgur.com/k6lPqS8.jpeg" .title-slide}
+
+<div class="overlay">
+  <div class="edf-logo-text">EDF</div>
+  <h1>Appel d'offres<br>éolien terrestre</h1>
+  <p class="subtitle">(publié par la Commission de Régulation de l'Energie le 28 Avril 2017)</p>
+  <p class="livret">LIVRET D'ACCUEIL PRODUCTEUR</p>
+</div>
+
+## SOMMAIRE
+
+::: {.sommaire-list}
+- Préambule
+- Présentation des acteurs
+- Parcours de contractualisation
+- Check-list des démarches
+- Questions - Réponses
+- Adresses utiles
+:::
+
+## Préambule { .slide-with-header }
+
+::: {.columns}
+::: {.column width="60%"}
+- Ce document s'adresse uniquement aux lauréats de l'appel d'offres « Installations de production d'électricité à partir de l'énergie mécanique du vent, implantées à terre » (FET17).
+
+- Ce document résume, sous une forme simplifiée, les étapes nécessaires à l'élaboration du contrat de complément de rémunération pour une installation lauréate de l'appel d'offres éolien terrestre, lancé par la Commission de Régulation de l'Energie (CRE) le 28 avril 2017.
+
+- Dans le cadre des missions de service public prévues par l'article L311-12 du code de l'énergie, EDF est tenue de conclure un contrat de complément de rémunération avec les lauréats retenus à l'issue de l'appel d'offres.
+:::
+
+::: {.column width="40%"}
+::: {.info-box}
+<span class="icon">i</span>
+Ce livret ne saurait engager la responsabilité d'EDF quant aux obligations du producteur de s'assurer qu'il respecte le cadre législatif et règlementaire applicable à son installation.
+:::
+
+::: {.info-box}
+<span class="icon">i</span>
+Le lauréat s'engage à mettre en service et à exploiter une installation en tous points conforme aux stipulations du cahier des charges de l'appel d'offres et aux caractéristiques décrites dans son offre (seuls les écarts mentionnés dans l'appel d'offres sont tolérés).
+:::
+:::
+:::
+
+## Présentation des acteurs { .slide-with-header }
+
+<div class="diagram-container">
+    <div class="actor producteur">
+        <strong>Producteur</strong>
+    </div>
+    <div class="actor actor-circle cre">
+        <strong>Commission de Régulation de l'Energie</strong>
+        <p>Pour répondre à l'Appel d'Offres autoconsommation.</p>
+    </div>
+     <div class="actor actor-circle marche">
+        <strong>Marché de l'électricité</strong>
+        <p>Pour vendre mon énergie produite. Seul un contrat de complément de rémunération est signé avec EDF.</p>
+    </div>
+    <div class="actor actor-circle prefet">
+        <strong>Préfet de Région/DGEC</strong>
+        <p>Pour toute modification (d'exploitant, de puissance,...)</p>
+    </div>
+    <div class="actor actor-circle gestionnaire">
+        <strong>Gestionnaire du Réseau de Distribution ou de Transport : Enedis ou ELD ou RTE</strong>
+        <p>Pour obtenir un contrat d'accès au réseau et mettre en service l'installation.</p>
+    </div>
+    <div class="actor actor-circle edfoa">
+        <strong>EDF OA (Obligations d'Achat)</strong>
+        <p>Pour obtenir le contrat de complément de rémunération correspondant à l'appel d'offres.</p>
+    </div>
+</div>
+
+## Parcours de contractualisation { .slide-with-header }
+
+::: {.parcours-wrapper}
+
+<div class="parcours-row">
+  <div class="step-box step-1"><span class="step-number">1</span> Demande de raccordement</div>
+  <div class="detail-box">J'effectue ma demande de raccordement auprès du gestionnaire de réseau (maximum 2 mois après la désignation).</div>
+</div>
+<div class="parcours-row">
+  <div class="step-box step-2"><span class="step-number">2</span> Demande de contrat</div>
+  <div class="detail-box">Au plus près de l'achèvement de mon installation, j'envoie ma demande de contrat à EDF OA accompagnée des pièces listées page 7.</div>
+</div>
+<div class="parcours-row">
+  <div class="step-box step-3"><span class="step-number">3</span> Notification de la date projetée de prise d'effet</div>
+  <div class="detail-box">Je notifie à EDF OA la date projetée de prise d'effet de mon contrat. La notification s'effectue par voie postale ou par voie dématérialisée.</div>
+</div>
+<div class="parcours-row">
+  <div class="step-box step-4"><span class="step-number">4</span> Mise en service du raccordement</div>
+  <div class="detail-box">Je prends rendez vous avec mon gestionnaire de réseau pour mettre en service le raccordement mon installation au réseau.</div>
+</div>
+<div class="parcours-row">
+  <div class="step-box step-5"><span class="step-number">5</span> Achèvement de l'installation et attestation de conformité</div>
+  <div class="detail-box">J'achève mon installation dans un délai de 36 mois à compter de la date de désignation. Je fais établir, par un organisme agréé, une attestation de conformité.</div>
+</div>
+<div class="parcours-row">
+  <div class="step-box step-6"><span class="step-number">6</span> Signature du contrat de complément de rémunération</div>
+  <div class="detail-box">Dans le cadre du processus de signature, EDF OA m'adresse mon contrat de complément de rémunération.</div>
+</div>
+<div class="parcours-row">
+  <div class="step-box step-7"><span class="step-number">7</span> Facture et règlement</div>
+  <div class="detail-box">Je mets mes factures mensuellement, sur la base des données de facturation transmises par le gestionnaire de réseau et les transmets à EDF OA.</div>
+</div>
+
+:::
