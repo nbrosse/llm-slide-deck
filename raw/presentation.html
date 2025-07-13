@@ -58,7 +58,7 @@
         }
 
         .footer .footer-right {
-             display: flex;
+            display: flex;
             align-items: center;
         }
         
@@ -66,34 +66,21 @@
             margin: 0 1em;
         }
 
-        /* EDF Logo */
-        .edf-logo {
-            display: inline-flex;
-            align-items: center;
-            font-weight: 700;
-            color: #003366; /* EDF Blue */
-            font-size: 2em;
+        /* EDF Logo Image */
+        .edf-logo-img {
+            height: 2.2em;
+            width: auto;
+            vertical-align: middle;
         }
-        .edf-logo .flames {
-            display: inline-block;
-            margin-right: 0.2em;
-            color: #FF6600; /* EDF Orange */
+        .footer .edf-logo-img {
+            height: 1.5em;
         }
-        .edf-logo .flames span {
-            display: inline-block;
-            transform-origin: bottom center;
-        }
-        .edf-logo .flame1 { transform: rotate(-20deg) scale(0.8); }
-        .edf-logo .flame2 { transform: rotate(0deg) scale(1); }
-        .edf-logo .flame3 { transform: rotate(20deg) scale(0.8); }
-
-        .footer .edf-logo { font-size: 1.5em; }
         .footer .page-number { font-size: 1.5em; font-weight: bold; margin-left: 0.5em; color: #555; }
 
 
         /* SLIDE 1: Title Slide */
         .slide-1 {
-            background-image: url('https://i.imgur.com/k6lPqS8.jpeg');
+            background-image: url('../images/slide-1-background.jpg');
             background-size: cover;
             background-position: center;
             justify-content: center;
@@ -251,7 +238,7 @@
         }
         .producteur {
             width: 24%; height: 42%; top: 29%; left: 38%;
-            background-image: url('https://i.imgur.com/k0PqR94.jpeg');
+            background-image: url('../images/slide-3-acteurs.jpg');
             background-size: cover;
             background-position: center;
             border-radius: 50%;
@@ -339,12 +326,7 @@
         <!-- SLIDE 1: Title -->
         <section class="slide slide-1">
             <div class="overlay">
-                <div class="edf-logo">
-                    <div class="flames">
-                        <span class="flame1">●</span><span class="flame2">●</span><span class="flame3">●</span>
-                    </div>
-                    EDF
-                </div>
+                <img src="../images/edf-logo.png" alt="EDF Logo" class="edf-logo-img" />
                 <h1>Appel d'offres<br>éolien terrestre</h1>
                 <p class="subtitle">(publié par la Commission de Régulation de l'Energie le 28 Avril 2017)</p>
                 <p class="livret">LIVRET D'ACCUEIL PRODUCTEUR</p>
@@ -368,12 +350,7 @@
                 </div>
                 <span class="footer-text">Direction des Services Partagés</span>
                 <div class="footer-right">
-                    <div class="edf-logo">
-                        <div class="flames">
-                            <span class="flame1">●</span><span class="flame2">●</span><span class="flame3">●</span>
-                        </div>
-                        EDF
-                    </div>
+                    <img src="../images/edf-logo.png" alt="EDF Logo" class="edf-logo-img" />
                     <span class="page-number">2</span>
                 </div>
             </div>
@@ -405,12 +382,7 @@
             </div>
             <div class="footer">
                  <div class="footer-left">
-                    <div class="edf-logo">
-                        <div class="flames">
-                            <span class="flame1">●</span><span class="flame2">●</span><span class="flame3">●</span>
-                        </div>
-                        EDF
-                    </div>
+                    <img src="../images/edf-logo.png" alt="EDF Logo" class="edf-logo-img" />
                     <span class="footer-text">07/07/25</span>
                 </div>
                 <span class="footer-text">Direction des Services Partagés</span>
@@ -452,12 +424,7 @@
             </div>
              <div class="footer">
                  <div class="footer-left">
-                    <div class="edf-logo">
-                        <div class="flames">
-                            <span class="flame1">●</span><span class="flame2">●</span><span class="flame3">●</span>
-                        </div>
-                        EDF
-                    </div>
+                    <img src="../images/edf-logo.png" alt="EDF Logo" class="edf-logo-img" />
                     <span class="footer-text">07/07/25</span>
                 </div>
                 <span class="footer-text">Direction des Services Partagés</span>

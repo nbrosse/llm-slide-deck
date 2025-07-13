@@ -14,22 +14,17 @@ body {
 }
 
 .reveal .slides {
-  text-align: left;
+  text-align: left !important;
 }
 
 /* Custom EDF Logo in Title Slide */
 .edf-logo-text {
-  font-size: 2.5em;
-  font-weight: 700;
-  color: var(--edf-blue-dark);
-  text-align: left;
+  display: block;
+  width: 220px;
+  height: 60px;
+  background: url('../images/edf-logo.png') no-repeat left center/contain;
   margin-bottom: 20px;
-}
-.edf-logo-text::before {
-    content: "●●●";
-    color: var(--edf-orange);
-    letter-spacing: -2px;
-    margin-right: 10px;
+  text-indent: -9999px;
 }
 
 /* Footer & Logo */
@@ -81,12 +76,12 @@ body {
 
 /* --- Slides with Header Bar --- */
 .slide-with-header h2 {
-    background-color: var(--header-orange);
-    color: white;
-    padding: 15px 40px;
-    margin: -20px -40px 30px -40px; /* Adjust for revealjs padding */
-    font-size: 1.5em;
-    font-weight: 700;
+    background-color: var(--header-orange) !important;
+    color: white !important;
+    padding: 15px 40px !important;
+    margin: -20px -40px 30px -40px !important; /* Adjust for revealjs padding */
+    font-size: 1.5em !important;
+    font-weight: 700 !important;
 }
 
 
@@ -150,8 +145,9 @@ body {
   margin-top: -0.1em;
 }
 
+
 /* --- Slide 4: Acteurs --- */
-.diagram-container {
+/* .diagram-container {
     position: relative;
     width: 100%;
     height: 500px;
@@ -172,12 +168,69 @@ body {
 .actor-circle { border: 4px solid; border-radius: 50%; }
 .producteur {
     width: 24%; height: 42%; top: 29%; left: 38%;
-    background-image: url('https://i.imgur.com/k0PqR94.jpeg');
+    background-image: url('../images/slide-3-acteurs.jpg');
     background-size: cover; background-position: center;
     border-radius: 50%; color: white;
     text-shadow: 1px 1px 3px black;
 }
 .producteur strong { font-size: 2.2em; }
+.cre { top: 0; left: 5%; width: 25%; height: 40%; border-color: #8E44AD; }
+.marche { top: 0; right: 5%; width: 25%; height: 40%; border-color: #BDC3C7; }
+.prefet { bottom: 0; left: 5%; width: 25%; height: 40%; border-color: #F39C12; }
+.gestionnaire { bottom: 0; left: 32%; width: 28%; height: 45%; border-color: #2980B9; }
+.edfoa { bottom: 0; right: 5%; width: 25%; height: 40%; border-color: #E67E22; } */
+
+/* --- Slide 4: Acteurs --- */
+.diagram-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    font-size: 14px;
+}
+.actor {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1.5em; /* A bit more padding for spacing */
+    line-height: 1.3;
+}
+
+/* Style the title part */
+.actor strong { 
+    font-size: 1.2em; 
+    margin-bottom: 0.7em;
+    display: block; /* Ensures margin is applied correctly */
+}
+
+/* Style the description part */
+.actor p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.actor-circle { 
+    border: 4px solid; 
+    border-radius: 50%; 
+}
+
+.producteur {
+    width: 24%; height: 42%; top: 29%; left: 38%;
+    background-image: url('../images/slide-3-acteurs.jpg'); /* Please ensure the image path is correct */
+    background-size: cover; background-position: center;
+    border-radius: 50%;
+}
+
+/* Style the text for the producer to be visible on the image */
+.producteur strong {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 2em; /* Make "Producteurs" text larger */
+}
+
 .cre { top: 0; left: 5%; width: 25%; height: 40%; border-color: #8E44AD; }
 .marche { top: 0; right: 5%; width: 25%; height: 40%; border-color: #BDC3C7; }
 .prefet { bottom: 0; left: 5%; width: 25%; height: 40%; border-color: #F39C12; }
