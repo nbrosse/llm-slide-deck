@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "LLM Slide Decks"
+  navbar:
+    left:
+      - text: Home
+        href: presentation.html
+      - text: PowerPoint Doc
+        href: ../powerpoint/doc.md
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+publish:
+  provider: gh-pages
