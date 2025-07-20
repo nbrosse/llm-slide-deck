@@ -1,5 +1,5 @@
 [project]
-name = "llm-slides-deck"
+name = "llm-slide-deck"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
