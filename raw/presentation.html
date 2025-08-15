@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDF - Appel d'offres éolien terrestre</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 2rem 1rem;
+        }
+
+        .slide-deck {
+            max-width: 1024px;
+            margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .slide {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        .slide:last-child {
+            border-bottom: none;
+        }
+
+        /* Common Footer */
+        .footer {
+            margin-top: auto;
+            padding: 1.5% 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2vw; /* Responsive font size */
+            color: #555;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .footer .footer-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer .footer-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-text {
+            margin: 0 1em;
+        }
+
+        /* EDF Logo Image */
+        .edf-logo-img {
+            height: 2.2em;
+            width: auto;
+            vertical-align: middle;
+        }
+        .footer .edf-logo-img {
+            height: 1.5em;
+        }
+        .footer .page-number { font-size: 1.5em; font-weight: bold; margin-left: 0.5em; color: #555; }
+
+
+        /* SLIDE 1: Title Slide */
+        .slide-1 {
+            background-image: url('../images/slide-1-background.jpg');
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .slide-1 .overlay {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 5%;
+            width: 70%;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .slide-1 .edf-logo {
+            justify-content: flex-start;
+            width: 100%;
+            font-size: 2.5vw;
+        }
+        .slide-1 h1 {
+            font-size: 3.8vw;
+            color: #003366;
+            margin: 0.5em 0 0.1em;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+        .slide-1 .subtitle {
+            font-size: 1.4vw;
+            color: #555;
+            margin-bottom: 2em;
+        }
+        .slide-1 .livret {
+            font-size: 2.8vw;
+            color: #FF6600;
+            font-weight: 600;
+            border-top: 1px solid #ddd;
+            padding-top: 1em;
+        }
+
+        /* SLIDE 2: Sommaire */
+        .slide-2 {
+            padding: 4% 8%;
+            box-sizing: border-box;
+        }
+        .slide-2 h2 {
+            font-size: 3.5vw;
+            color: #555;
+            margin-bottom: 1.5em;
+            font-weight: 600;
+        }
+        .sommaire-list .item {
+            color: white;
+            padding: 1.5% 3%;
+            margin-bottom: 1.5%;
+            font-size: 1.8vw;
+            font-weight: 600;
+            width: 60%;
+        }
+        .item.preambule { background-color: #2979FF; }
+        .item.acteurs { background-color: #002D62; }
+        .item.parcours { background-color: #558B2F; }
+        .item.checklist { background-color: #AFB42B; }
+        .item.qa { background-color: #F57C00; }
+        .item.adresses { background-color: #E64A19; }
+
+        /* SLIDE 3: Préambule */
+        .slide-3 .header {
+            background-color: #F57C00;
+            color: white;
+            padding: 2% 8%;
+        }
+        .slide-3 h2 {
+            font-size: 3.5vw;
+            margin: 0;
+            font-weight: 700;
+        }
+        .slide-3 .content {
+            display: flex;
+            padding: 3% 8%;
+            gap: 5%;
+            align-items: flex-start;
+            flex-grow: 1;
+        }
+        .slide-3 .text-content {
+            flex: 3;
+        }
+        .slide-3 .text-content ul {
+            list-style: none;
+            padding-left: 1.5em;
+            font-size: 1.5vw;
+            line-height: 1.6;
+        }
+        .slide-3 .text-content li {
+            position: relative;
+            margin-bottom: 1.5em;
+        }
+        .slide-3 .text-content li::before {
+            content: '◆';
+            position: absolute;
+            left: -1.5em;
+            top: 0.1em;
+            color: #FF6600;
+            font-size: 1.2em;
+        }
+        .slide-3 .info-boxes {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+        }
+        .slide-3 .info-box {
+            background-color: #2C3E50;
+            color: white;
+            padding: 5%;
+            font-size: 1.3vw;
+            line-height: 1.5;
+        }
+        .info-box .icon {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 3em;
+            float: left;
+            margin-right: 0.3em;
+            line-height: 1;
+            margin-top: -0.1em;
+        }
+
+        /* SLIDE 4: Présentation des acteurs */
+        .slide-4 .header { background-color: #F57C00; color: white; padding: 2% 8%; }
+        .slide-4 h2 { font-size: 3.5vw; margin: 0; font-weight: 700; }
+        .slide-4 .diagram-container {
+            flex-grow: 1;
+            position: relative;
+            padding: 2%;
+        }
+        .actor {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 1em;
+            font-size: 1.1vw;
+            line-height: 1.3;
+        }
+        .actor strong {
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+        .actor-circle {
+            border: 4px solid;
+            border-radius: 50%;
+        }
+        .producteur {
+            width: 24%; height: 42%; top: 29%; left: 38%;
+            background-image: url('../images/slide-3-acteurs.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+        .producteur strong { font-size: 2.2em; }
+        .cre { top: 5%; left: 5%; width: 25%; height: 40%; border-color: #8E44AD; }
+        .marche { top: 5%; right: 5%; width: 25%; height: 40%; border-color: #BDC3C7; }
+        .prefet { bottom: 5%; left: 5%; width: 25%; height: 40%; border-color: #F39C12; }
+        .gestionnaire { bottom: 5%; left: 32%; width: 28%; height: 45%; border-color: #2980B9; }
+        .edfoa { bottom: 5%; right: 5%; width: 25%; height: 40%; border-color: #E67E22; }
+
+        /* SLIDE 5: Parcours */
+        .slide-5 .header { background-color: #F57C00; color: white; padding: 2% 8%; }
+        .slide-5 h2 { font-size: 3.5vw; margin: 0; font-weight: 700; }
+        .slide-5 .parcours-content {
+            flex-grow: 1;
+            display: flex;
+            padding: 1% 4%;
+            font-size: 1.1vw;
+        }
+        .parcours-steps { flex: 4; }
+        .parcours-details { flex: 6; }
+        .parcours-row {
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 0.5%;
+        }
+        .step-box {
+            flex: 4;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 1.5em 1em;
+            font-weight: 600;
+        }
+        .step-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-right: 0.5em;
+            line-height: 1;
+        }
+        .detail-box {
+            flex: 6;
+            background-color: #f5f5f5;
+            padding: 1em;
+            margin-left: 0.5%;
+            display: flex;
+            align-items: center;
+        }
+        .step-1 .step-box { background-color: #1976D2; }
+        .step-2 .step-box { background-color: #303F9F; }
+        .step-3 .step-box { background-color: #FBC02D; }
+        .step-4 .step-box { background-color: #F57C00; }
+        .step-5 .step-box { background-color: #D32F2F; }
+        .step-6 .step-box { background-color: #388E3C; }
+        .step-7 .step-box { background-color: #7B1FA2; }
+        
+        @media (max-width: 768px) {
+            body { padding: 0; }
+            .slide { aspect-ratio: unset; height: auto; padding-bottom: 2rem; }
+            .footer { font-size: 2vw; }
+            .slide-1 h1 { font-size: 6vw; }
+            .slide-1 .subtitle { font-size: 2.5vw; }
+            .slide-1 .livret { font-size: 4.5vw; }
+            .slide-2 h2, .slide-3 h2, .slide-4 h2, .slide-5 h2 { font-size: 6vw; }
+            .sommaire-list .item { font-size: 3vw; width: 80%; }
+            .slide-3 .content { flex-direction: column; }
+            .slide-3 .text-content ul { font-size: 2.5vw; }
+            .slide-3 .info-box { font-size: 2.2vw; }
+            .slide-4 .diagram-container { min-height: 600px; }
+            .actor { font-size: 1.8vw; }
+            .slide-5 .parcours-content { flex-direction: column; font-size: 2.2vw; }
+            .parcours-row { flex-direction: column; margin-bottom: 1rem; }
+            .detail-box { margin-left: 0; margin-top: 2px; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="slide-deck">
+
+        <!-- SLIDE 1: Title -->
+        <section class="slide slide-1">
+            <div class="overlay">
+                <img src="../images/edf-logo.png" alt="EDF Logo" class="edf-logo-img" />
+                <h1>Appel d'offres<br>éolien terrestre</h1>
+                <p class="subtitle">(publié par la Commission de Régulation de l'Energie le 28 Avril 2017)</p>
+                <p class="livret">LIVRET D'ACCUEIL PRODUCTEUR</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: Sommaire -->
+        <section class="slide slide-2">
+            <h2>SOMMAIRE</h2>
+            <div class="sommaire-list">
+                <div class="item preambule">Préambule</div>
+                <div class="item acteurs">Présentation des acteurs</div>
+                <div class="item parcours">Parcours de contractualisation</div>
+                <div class="item checklist">Check-list des démarches</div>
+                <div class="item qa">Questions - Réponses</div>
+                <div class="item adresses">Adresses utiles</div>
+            </div>
+            <div class="footer">
+                <div class="footer-left">
+                    <span class="footer-text">07/07/25</span>
+                </div>
+                <span class="footer-text">Direction des Services Partagés</span>
+                <div class="footer-right">
+                    <img src="../images/edf-logo.png" alt="EDF Logo" class="edf-logo-img" />
+                    <span class="page-number">2</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Préambule -->
+        <section class="slide slide-3">
+            <div class="header">
+                <h2>Préambule</h2>
+            </div>
+            <div class="content">
+                <div class="text-content">
+                    <ul>
+                        <li>Ce document s'adresse uniquement aux lauréats de l'appel d'offres « Installations de production d'électricité à partir de l'énergie mécanique du vent, implantées à terre » (FET17).</li>
+                        <li>Ce document résume, sous une forme simplifiée, les étapes nécessaires à l'élaboration du contrat de complément de rémunération pour une installation lauréate de l'appel d'offres éolien terrestre, lancé par la Commission de Régulation de l'Energie (CRE) le 28 avril 2017.</li>
+                        <li>Dans le cadre des missions de service public prévues par l'article L311-12 du code de l'énergie, EDF est tenue de conclure un contrat de complément de rémunération avec les lauréats retenus à l'issue de l'appel d'offres.</li>
+                    </ul>
+                </div>
+                <div class="info-boxes">
+                    <div class="info-box">
+                        <span class="icon">i</span>
+                        Ce livret ne saurait engager la responsabilité d'EDF quant aux obligations du producteur de s'assurer qu'il respecte le cadre législatif et règlementaire applicable à son installation.
+                    </div>
+                    <div class="info-box">
+                        <span class="icon">i</span>
+                        Le lauréat s'engage à mettre en service et à exploiter une installation en tous points conforme aux stipulations du cahier des charges de l'appel d'offres et aux caractéristiques décrites dans son offre (seuls les écarts mentionnés dans l'appel d'offres sont tolérés).
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                 <div class="footer-left">
+                    <img src="../images/edf-logo.png" alt="EDF Logo" class="edf-logo-img" />
+                    <span class="footer-text">07/07/25</span>
+                </div>
+                <span class="footer-text">Direction des Services Partagés</span>
+                <div class="footer-right">
+                    <span class="page-number">3</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Présentation des acteurs -->
+        <section class="slide slide-4">
+            <div class="header">
+                <h2>Présentation des acteurs</h2>
+            </div>
+            <div class="diagram-container">
+                <div class="actor producteur">
+                    <strong>Producteur</strong>
+                </div>
+                <div class="actor actor-circle cre">
+                    <strong>Commission de Régulation de l'Energie</strong>
+                    Pour répondre à l'Appel d'Offres autoconsommation.
+                </div>
+                 <div class="actor actor-circle marche">
+                    <strong>Marché de l'électricité</strong>
+                    Pour vendre mon énergie produite. Seul un contrat de complément de rémunération est signé avec EDF.
+                </div>
+                <div class="actor actor-circle prefet">
+                    <strong>Préfet de Région/DGEC</strong>
+                    Pour toute modification (d'exploitant, de puissance,...)
+                </div>
+                <div class="actor actor-circle gestionnaire">
+                    <strong>Gestionnaire du Réseau de Distribution ou de Transport : Enedis ou ELD ou RTE</strong>
+                    Pour obtenir un contrat d'accès au réseau et mettre en service l'installation.
+                </div>
+                <div class="actor actor-circle edfoa">
+                    <strong>EDF OA (Obligations d'Achat)</strong>
+                    Pour obtenir le contrat de complément de rémunération correspondant à l'appel d'offres.
+                </div>
+            </div>
+             <div class="footer">
+                 <div class="footer-left">
+                    <img src="../images/edf-logo.png" alt="EDF Logo" class="edf-logo-img" />
+                    <span class="footer-text">07/07/25</span>
+                </div>
+                <span class="footer-text">Direction des Services Partagés</span>
+                <div class="footer-right">
+                    <span class="page-number">4</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: Parcours de contractualisation -->
+        <section class="slide slide-5">
+            <div class="header">
+                <h2>Parcours de contractualisation</h2>
+            </div>
+            <div class="parcours-content">
+                <div class="parcours-steps-details-wrapper">
+                    <div class="parcours-row step-1">
+                        <div class="step-box"><span class="step-number">1</span> Demande de raccordement</div>
+                        <div class="detail-box">J'effectue ma demande de raccordement auprès du gestionnaire de réseau (maximum 2 mois après la désignation).</div>
+                    </div>
+                    <div class="parcours-row step-2">
+                        <div class="step-box"><span class="step-number">2</span> Demande de contrat</div>
+                        <div class="detail-box">Au plus près de l'achèvement de mon installation, j'envoie ma demande de contrat à EDF OA accompagnée des pièces listées page 7.</div>
+                    </div>
+                    <div class="parcours-row step-3">
+                        <div class="step-box"><span class="step-number">3</span> Notification de la date projetée de prise d'effet</div>
+                        <div class="detail-box">Je notifie à EDF OA la date projetée de prise d'effet de mon contrat. La notification s'effectue par voie postale ou par voie dématérialisée.</div>
+                    </div>
+                    <div class="parcours-row step-4">
+                        <div class="step-box"><span class="step-number">4</span> Mise en service du raccordement</div>
+                        <div class="detail-box">Je prends rendez vous avec mon gestionnaire de réseau pour mettre en service le raccordement mon installation au réseau.</div>
+                    </div>
+                    <div class="parcours-row step-5">
+                        <div class="step-box"><span class="step-number">5</span> Achèvement de l'installation et attestation de conformité</div>
+                        <div class="detail-box">J'achève mon installation dans un délai de 36 mois à compter de la date de désignation. Je fais établir, par un organisme agréé, une attestation de conformité qui confirmera le respect du cahier des charges de l'appel d'offres éolien terrestre et la conformité de l'installation aux éléments mentionnés dans mon offre de candidature.</div>
+                    </div>
+                    <div class="parcours-row step-6">
+                        <div class="step-box"><span class="step-number">6</span> Signature du contrat de complément de rémunération</div>
+                        <div class="detail-box">Dans le cadre du processus de signature, EDF OA m'adresse mon contrat de complément de rémunération.</div>
+                    </div>
+                    <div class="parcours-row step-7">
+                        <div class="step-box"><span class="step-number">7</span> Facture et règlement</div>
+                        <div class="detail-box">Je mets mes factures mensuellement, sur la base des données de facturation transmises par le gestionnaire de réseau selon les modalités définies aux conditions générales de mon contrat de complément de rémunération et les transmets à EDF OA. De plus, en début d'année civile, j'adresse à EDF OA la facture ou l'avoir de régularisation annuelle conformément aux dispositions des conditions générales de mon contrat.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                 <div class="footer-left">
+                    <div class="edf-logo">
+                        <div class="flames">
+                            <span class="flame1">●</span><span class="flame2">●</span><span class="flame3">●</span>
+                        </div>
+                        EDF
+                    </div>
+                    <span class="footer-text">07/07/25</span>
+                </div>
+                <span class="footer-text">Direction des Services Partagés</span>
+                <div class="footer-right">
+                    <span class="page-number">5</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

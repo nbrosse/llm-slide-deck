@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "powerpoint/powerpoint_slides.html",
+    "href": "powerpoint/powerpoint_slides.html",
+    "title": "PowerPoint (python-pptx)",
+    "section": "",
+    "text": "This page embeds the PDF export of the PowerPoint deck generated with python-pptx. You can also download the files directly:\n\nDownload the PPTX\nDownload the PDF\n\n\n  Your browser can't display PDFs. Download it here.\n  \n  If the built-in PDF viewer fails, use the download link above."
+  },
+  {
+    "objectID": "quarto/presentation.html#section",
+    "href": "quarto/presentation.html#section",
+    "title": "LLM Slide Decks",
+    "section": "",
+    "text": "EDF\n\n\nAppel d’offreséolien terrestre\n\n\n(publié par la Commission de Régulation de l’Energie le 28 Avril 2017)\n\n\nLIVRET D’ACCUEIL PRODUCTEUR"
+  },
+  {
+    "objectID": "quarto/presentation.html#sommaire",
+    "href": "quarto/presentation.html#sommaire",
+    "title": "LLM Slide Decks",
+    "section": "SOMMAIRE",
+    "text": "SOMMAIRE\n\n\nPréambule\nPrésentation des acteurs\nParcours de contractualisation\nCheck-list des démarches\nQuestions - Réponses\nAdresses utiles"
+  },
+  {
+    "objectID": "quarto/presentation.html#préambule",
+    "href": "quarto/presentation.html#préambule",
+    "title": "LLM Slide Decks",
+    "section": "Préambule",
+    "text": "Préambule\n\n\n\nCe document s’adresse uniquement aux lauréats de l’appel d’offres « Installations de production d’électricité à partir de l’énergie mécanique du vent, implantées à terre » (FET17).\nCe document résume, sous une forme simplifiée, les étapes nécessaires à l’élaboration du contrat de complément de rémunération pour une installation lauréate de l’appel d’offres éolien terrestre, lancé par la Commission de Régulation de l’Energie (CRE) le 28 avril 2017.\nDans le cadre des missions de service public prévues par l’article L311-12 du code de l’énergie, EDF est tenue de conclure un contrat de complément de rémunération avec les lauréats retenus à l’issue de l’ appel d’offres.\n\n\n\ni Ce livret ne saurait engager la responsabilité d’EDF quant aux obligations du producteur de s’assurer qu’il respecte le cadre législatif et règlementaire applicable à son installation.\n\n\ni Le lauréat s’engage à mettre en service et à exploiter une installation en tous points conforme aux stipulations du cahier des charges de l’appel d’offres et aux caractéristiques décrites dans son offre (seuls les écarts mentionnés dans l’appel d’offres sont tolérés)."
+  },
+  {
+    "objectID": "quarto/presentation.html#présentation-des-acteurs",
+    "href": "quarto/presentation.html#présentation-des-acteurs",
+    "title": "LLM Slide Decks",
+    "section": "Présentation des acteurs",
+    "text": "Présentation des acteurs\n\n\n    Producteurs\n\n\n\n    Commission de Régulation de l'Energie\n    Pour répondre à l'Appel d'Offres.\n\n\n\n    Marché de l'électricité\n    Pour vendre l'énergie produite. Le contrat de complément de rémunération est signé uniquement avec EDF.\n\n\n\n    Préfet de Région/DGEC\n    Pour toute modification (d'exploitant, de puissance, …)\n\n\n\n    Gestionnaire du Réseau de Distribution ou de Transport : Enedis ou ELD ou RTE\n    Pour obtenir un contrat d'accès au réseau et mettre en service l'installation.\n\n\n\n    EDF OA (Obligations d'Achat)\n    Pour obtenir le contrat de complément de rémunération correspondant à l'appel d'offres."
+  },
+  {
+    "objectID": "quarto/presentation.html#parcours-de-contractualisation",
+    "href": "quarto/presentation.html#parcours-de-contractualisation",
+    "title": "LLM Slide Decks",
+    "section": "Parcours de contractualisation",
+    "text": "Parcours de contractualisation\n\n\n\n1 Demande de raccordement\n\n\nJ’effectue ma demande de raccordement auprès du gestionnaire de réseau (au maximum 2 mois après la désignation).\n\n\n\n\n2 Demande de contrat\n\n\nAu plus près de l’achèvement de mon installation, j’envoie ma demande de contrat à EDF OA, accompagnée des pièces listées page 7.\n\n\n\n\n3 Notification de la date projetée de prise d’effet\n\n\nJe notifie à EDF OA la date projetée de prise d’effet de mon contrat. La notification s’effectue par voie postale ou par voie dématérialisée.\n\n\n\n\n4 Mise en service du raccordement\n\n\nJe prends rendez-vous avec mon gestionnaire de réseau pour mettre en service le raccordement de mon installation au réseau.\n\n\n\n\n5 Achèvement de l’installation et attestation de conformité\n\n\nJ’achève mon installation dans un délai de 36 mois à compter de la date de désignation. Je fais établir, par un organisme agréé, une attestation de conformité.\n\n\n\n\n6 Signature du contrat de complément de rémunération\n\n\nDans le cadre du processus de signature, EDF OA m’adresse mon contrat de complément de rémunération.\n\n\n\n\n7 Facture et règlement\n\n\nJ’émets mes factures mensuellement, sur la base des données de facturation transmises par le gestionnaire de réseau, et les transmets à EDF OA."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LLM Slide Decks",
+    "section": "",
+    "text": "This site demonstrates multiple ways to generate slide decks with the help of large language models. The source code is on GitHub, and the companion blog post is here: LLM Slide Decks.\nStarting from a real‑world presentation — the EDF Producer Booklet (FET17CR) — I asked Google Gemini 2.5 Pro to reproduce the first pages in several formats:\nExplore the demos below:"
+  },
+  {
+    "objectID": "index.html#source-document",
+    "href": "index.html#source-document",
+    "title": "LLM Slide Decks",
+    "section": "Source document",
+    "text": "Source document\nThe source document is the EDF presentation for the FET17 appel d’offres. Download it below or view it inline:\n\nDownload the EDF Producer Booklet (FET17CR)\n\n\n  Your browser can't display PDFs. Download it here.\n  \n  If the built-in PDF viewer fails, use the download link above."
+  },
+  {
+    "objectID": "google/google_slides.html",
+    "href": "google/google_slides.html",
+    "title": "Google Slides (via API)",
+    "section": "",
+    "text": "This page embeds the PDF export of the Google Slides deck generated via the Google Slides API. You can also download it directly:\n\nDownload the PDF\n\n\n  Your browser can't display PDFs. Download it here.\n  \n  If the built-in PDF viewer fails, use the download link above."
+  }
+]
