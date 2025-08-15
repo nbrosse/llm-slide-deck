@@ -1,0 +1,33 @@
+---
+title: "LLM Slide Decks"
+---
+
+This site demonstrates multiple ways to generate slide decks with the help of large language models. The source code is on [GitHub](https://github.com/nbrosse/llm-slide-deck), and the companion blog post is here: [LLM Slide Decks](https://nbrosse.github.io/llm-slides/llm-slides.html).
+
+Starting from a real‑world presentation — the EDF Producer Booklet (FET17CR) — I asked Google Gemini 2.5 Pro to reproduce the first pages in several formats:
+
+- Google Slides (Google Slides API)
+- PowerPoint (python-pptx)
+- HTML/CSS
+- Quarto/Reveal.js
+
+Explore the demos below:
+
+- **Reveal.js (Quarto)**: [quarto/presentation](quarto/presentation.qmd)
+- **Raw HTML/CSS**: [raw/presentation](raw/presentation.html)
+- **Google Slides (PDF export)**: [google/google_slides](google/google_slides.qmd)
+- **PowerPoint (PPTX and PDF)**: [powerpoint/powerpoint_slides](powerpoint/powerpoint_slides.qmd)
+
+## Source document
+
+The source document is the EDF presentation for the FET17 appel d'offres. Download it below or view it inline:
+
+- [Download the EDF Producer Booklet (FET17CR)](livret_producteur_fet17cr_v1.1.pdf)
+
+```{=html}
+<object data="livret_producteur_fet17cr_v1.1.pdf" type="application/pdf" width="100%" height="900px">
+  <p>Your browser can't display PDFs. Download it <a href="livret_producteur_fet17cr_v1.1.pdf">here</a>.</p>
+  <iframe src="livret_producteur_fet17cr_v1.1.pdf" width="100%" height="900px"></iframe>
+  <p>If the built-in PDF viewer fails, use the download link above.</p>
+  </object>
+```

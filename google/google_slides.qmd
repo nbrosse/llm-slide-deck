@@ -1,0 +1,20 @@
+---
+title: "Google Slides (via API)"
+format:
+  html:
+    toc: false
+---
+
+This page embeds the PDF export of the Google Slides deck generated via the Google Slides API. You can also download it directly:
+
+- [Download the PDF](EDF_Presentation_google_slides.pdf)
+
+```{=html}
+<object data="EDF_Presentation_google_slides.pdf" type="application/pdf" width="100%" height="900px">
+  <p>Your browser can't display PDFs. Download it <a href="EDF_Presentation_google_slides.pdf">here</a>.</p>
+  <iframe src="EDF_Presentation_google_slides.pdf" width="100%" height="900px"></iframe>
+  <p>If the built-in PDF viewer fails, use the download link above.</p>
+  </object>
+```
+
+
