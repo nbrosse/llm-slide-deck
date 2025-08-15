@@ -1,7 +1,11 @@
 [project]
 name = "llm-slide-deck"
 version = "0.1.0"
-description = "Add your description here"
+description = "LLM Slide Decks"
+authors = [
+    { name = "Nicolas Brosse", email = "nicolas.brosse@gmail.com" }
+]
+repository = "https://github.com/nbrosse/llm-slide-deck"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -11,3 +15,6 @@ dependencies = [
     "pillow>=11.3.0",
     "python-pptx>=1.0.2",
 ]
+
+[tool.ruff]
+line-length = 120

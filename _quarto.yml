@@ -1,15 +1,30 @@
 project:
   type: website
-  output-dir: docs
+  render: 
+    - index.qmd
+    - quarto/presentation.qmd
+    - google/google_slides.qmd
+    - powerpoint/powerpoint_slides.qmd
 
 website:
   title: "LLM Slide Decks"
   navbar:
+    search: false
+    tools:
+      - icon: github
+        href: https://github.com/nbrosse/llm-slide-deck
     left:
       - text: Home
-        href: presentation.html
-      - text: PowerPoint Doc
-        href: ../powerpoint/doc.md
+        href: index.html
+      - text: Reveal.js Presentation
+        href: quarto/presentation.qmd
+      - text: Raw HTML Presentation
+        href: raw/presentation.html
+      - text: Google Slides
+        href: google/google_slides.qmd
+      - text: Powerpoint Slides
+        href: powerpoint/powerpoint_slides.qmd
+      
 
 format:
   html:
