@@ -295,3 +295,6 @@ google/token.pickle
 # quarto 
 quarto/presentation_files/
 quarto/presentation.html
+
+.quarto/
+_site/
